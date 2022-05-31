@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+</body>
+<script>
+    function isFibonacci(number) {
+        let number1 = 0;
+        let number2 = 1;
+        let count = false;
+        for(let i = 0; i <= number ; i++) {
+            let number3 = number1 + number2;
+            if(number === number1|| number === number2 || number === number3) {
+                count = true;
+            }
+            number1 = number2;
+            number2 = number3;
+        }
+        return count;
+    }
+    let numb=+prompt("Nhập số để kiểm tra:")
+    document.write(isFibonacci(numb))
+
+
+
+
+
+
+// function fibonacci_series (n){
+//     if (n===1)
+//     {
+//         return [0, 1];
+//     }
+//     else
+//     {
+//         let s = fibonacci_series(n - 1);
+//         s.push(s[s.length - 1] + s[s.length - 2]);
+//         return s;
+//     }
+// }
+// document.write(fibonacci_series(8));
+
+
+
+</script>
+</html>
